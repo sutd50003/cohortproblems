@@ -14,15 +14,15 @@ Given the ER diagram below (refer to lecture note),
 
 implement a simple API web-app with the following end-points using MongoDB database:
 
-1. add dept
+1. add dept into database
    ```url
    http://localhost:3000/dept/add/hr
    ```
-   yields
+   yields (displayed in browser)
    ```json
-   { "code": "hr", "_id": "6478a5a866394647f94f4021" }
+   { "code": "hr"}
    ```
-1. add staff
+1. add staff into database
    ```url
    http://localhost:3000/staff/add/1/aaron/hr
    ```
@@ -31,8 +31,7 @@ implement a simple API web-app with the following end-points using MongoDB datab
    {
      "id": "1",
      "name": "aaron",
-     "dept": "hr",
-     "_id": "6478a6de67e208e3a7764c43"
+     "dept": "hr"
    }
    ```
 1. find all departments
@@ -68,8 +67,10 @@ Given the ER diagram below,
 
 ![](../images/er2.png)
 
-give the step-by-step explanation on how we can implement API which returns the count of staff from each department.
+give the step-by-step explanation on how we can implement the following API in your Express.js webapp which returns the count of staff from each department by using MySQL database:
 
-`http://127.0.0.1:3000/dept/count` which yields
+`localhost:3000/dept/count`
+
+yields
 
 `[{"count":2,"dept":"HR"}]`.
