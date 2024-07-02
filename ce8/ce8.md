@@ -4,7 +4,7 @@
 
 ## Total 10 Marks
 
-You may submit your codes in a zip file with folders and subfolders, and a report to explain your codes.
+You may submit your codes in a zip file containing ce8_q1 and ce8_q2 folders.
 
 ## Question 1 (5 Marks)
 
@@ -36,7 +36,8 @@ the user can use the form in `https://localhost:3000/staff/` to add new staff an
 #### Setup
 
 1. Reuse the express web app from question1, keep it running at port 3000.
-1. Add the necessary code in the respect end-points to allow access from `localhost:5000`.
+1. Set the react app to run at port 3001.
+1. Add the necessary code in the backend to allow access from `localhost:3001`.
 1. Extract the given project `ce8_q2`, in a folder. Run `npm i` to download all the dependencies.
 1. Start the app with `npm start`
 
