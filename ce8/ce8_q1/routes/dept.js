@@ -38,6 +38,7 @@ router.post('/submit/', async function(req, res, next) {
 // View end points
 /** render the add dept page */
 router.get('/', async function(req, res, next) {
+    res.set('Access-Control-Allow-Origin', 'http://localhost:5000');
     res.render('dept', { title:'department'})
 })
 
