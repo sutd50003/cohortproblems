@@ -24,6 +24,7 @@ router.post('/submit/', async function(req, res, next) {
 
 
 router.get('/', async function(req, res, next) {
+    res.set('Access-Control-Allow-Origin', 'http://localhost:5000');
     res.render('staff', { title:'staff'})
 });
 
