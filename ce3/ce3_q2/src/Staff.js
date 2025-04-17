@@ -20,9 +20,9 @@ function NewStaffBar({name, code, depts, onNameChange, onCodeChange, onSubmitCli
     let rows = [];
     for (let i in depts) {
         if (depts[i].code === code) {
-            rows.push(<option value={depts[i].code} selected>{depts[i].code}</option>);
+            rows.push(<option value={depts[i].code} key={depts[i].code} selected>{depts[i].code}</option>);
         } else {
-            rows.push(<option value={depts[i].code}>{depts[i].code}</option>);
+            rows.push(<option value={depts[i].code} key={depts[i].code} >{depts[i].code}</option>);
         }
     }
     return (
@@ -50,7 +50,7 @@ function StaffList({staffs}) {
     let rows = [];
     for (let i in staffs) {
         rows.push(
-            <tr><td>{staffs[i].name}</td><td>{staffs[i].code}</td></tr>
+            <tr key={staffs[i].id} ><td>{staffs[i].name}</td><td>{staffs[i].code}</td></tr>
         );
     }
     return (
@@ -107,6 +107,10 @@ function Staff() {
         const text = await response.text();
         const json = JSON.parse(text);
         setStaffs(json);
+        // init code to be the first of the depts if it is empty.
+        if (code === '' && json.length > 0) {
+            setCode(json[0].code);
+        }        
     }
 
     // Task 2, complete the following so that the list of dept codes will loaded
