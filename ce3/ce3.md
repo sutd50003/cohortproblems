@@ -37,18 +37,18 @@ the user can use the form in `https://localhost:3000/staff/` to add new staff an
 
 1. Reuse the express web app from question1, keep it running at port 3000.
 1. Set the react app to run at port 3001.
-1. Add the necessary code in the backend to allow access from `localhost:3001`.
+1. Add the necessary code in the backend to allow access from `localhost:5000`.
 1. Extract the given project `ce3_q2`, in a folder. Run `npm i` to download all the dependencies.
-1. Start the app with `npm start`
+1. Start the app with `npm run dev`
 
 ### Task 1 (2 Marks)
 
-Complete the TODOs in the React component `Dept.js` so that the department table is rendered (see below) when `Department` tab bar is clicked.
+Complete the TODOs in the React component `Dept.jsx` so that the department table is rendered (see below) when `Department` tab bar is clicked.
 
 ![](../images/ce8_q2_1.png)
 
 ### Task 2 (3 Marks)
 
-Complete the TODOs in the React component `Staff.js` so that the department code dropdown can be rendered on start.
+Complete the TODOs in the React component `Staff.jsx` so that the department code dropdown can be rendered on start.
 
 ![](../images/ce8_q2_2.png)
