@@ -3,7 +3,7 @@ const MongoClient = require('mongodb').MongoClient;
 const connection_str = 'mongodb://localhost:27017/';
 
 const client = new MongoClient(connection_str);
-const dbName = 'ce5q3'
+const dbName = 'ce2q1'
 
 var db = null;
 
