@@ -5,7 +5,7 @@ let pool = mysql
   .createPool({
     host: "localhost",
     user: "pichu",
-    database: "ce8q1",
+    database: "ce3q1",
     password: "pikaP!",
     connectionLimit: 10,
   })
