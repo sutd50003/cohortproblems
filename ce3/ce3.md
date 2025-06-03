@@ -36,7 +36,7 @@ the user can use the form in `https://localhost:3000/staff/` to add new staff an
 #### Setup
 
 1. Reuse the express web app from question1, keep it running at port 3000.
-1. Set the react app to run at port 3001.
+1. Set the react app to run at port 5000.
 1. Add the necessary code in the backend to allow access from `localhost:5000`.
 1. Extract the given project `ce3_q2`, in a folder. Run `npm i` to download all the dependencies.
 1. Start the app with `npm run dev`
