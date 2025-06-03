@@ -4,7 +4,7 @@
 
 ## Total 10 Marks
 
-You may submit your codes in a zip file containing ce8_q1 and ce8_q2 folders.
+You may submit your codes in a zip file containing ce3_q1 and ce3_q2 folders.
 
 ## Question 1 (5 Marks)
 
