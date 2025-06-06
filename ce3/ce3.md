@@ -18,7 +18,7 @@ You may submit your codes in a zip file containing ce3_q1 and ce3_q2 folders.
 1. Modify `models/db.js` according to your newly created user.
 1. Examine `models/dept.js`, `models/staff.js` and `models/work.js`. You don't need to modify any of these files.
 1. Examine `routes/dept.js` and `routes/staff.js`, You might need to modify these files depending on the port number you use for the frontend.
-1. Examine `app.js`. You don't need ot modify it.
+1. Examine `app.js`. You don't need to modify it.
 1. Examine `views/dept.ejs` and `views/staff.ejs`. You don't need to modify any of these files.
 
 ### Task 1 (2 Marks)
