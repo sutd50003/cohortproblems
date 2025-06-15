@@ -5,7 +5,9 @@
 
 By the end of this exercise, you should be able to
 
-1. Analyse system structure using domain class diagrams 
+1. Analyse system structure using domain class diagrams
+
+1. Interpret a given sequence diagram
 
 ## Total 20 Marks
 
@@ -43,9 +45,13 @@ An hour before the booked online tuition session, the system sends an SMS remind
 
 ## Task 2 (5 Marks)
 
-Given below is a part of the sequence diagram for attending a session. Identify the  chronological order of steps in the format classA calls method m() in classB.
+Given below is a part of the sequence diagram for attending a session. 
 
-![](../images/Sequence_Diagram_Tutor_Session.png){ width=600px height=500px } 
+Identify the  chronological order of steps in the format classA calls method m() in classB.
+
+![](../images/Sequence_Diagram_Tutor_Session.png)
+
+
 
 
 
