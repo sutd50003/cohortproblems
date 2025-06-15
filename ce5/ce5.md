@@ -45,7 +45,7 @@ An hour before the booked online tuition session, the system sends an SMS remind
 
 Given below is a part of the sequence diagram for attending a session. Identify the  chronological order of steps in the format classA calls method m() in classB.
 
-![](./images/Sequence_Diagram_Tutor_Session.png){ width=600px height=500px } 
+![](../images/Sequence_Diagram_Tutor_Session.png){ width=600px height=500px } 
 
 
 
