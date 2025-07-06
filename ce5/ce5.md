@@ -1,4 +1,4 @@
-# Cohort Exercise - Use Case
+# Cohort Exercise - Domain Class
 
 
 ## Learning Outcomes
