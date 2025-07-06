@@ -25,7 +25,7 @@ Refer to the Online Tutoring System you have analysed in CE4 and CE5.
 
 ## Task 2 (5 Marks)
 
-Derive the Solution class diagram by extending the domain class diagram derived in CE5.
+Derive the Solution class diagram by extending the domain class diagram derived in CE5 (Sufficient to include classes related to the use case you chose).
 
 ## Task 3 (5 Marks)
 
