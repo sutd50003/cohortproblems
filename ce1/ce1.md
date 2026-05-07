@@ -134,9 +134,9 @@ The first few steps of the execution is given as follows to help you get started
 | program counter (line num) | call stack | micro queue | promises               | macro queue      | event reg                                    | console output |
 | -------------------------- | ---------- | ----------- | ---------------------- | ---------------- | -------------------------------------------- | -------------- |
 | 5                          | [main()]   | []          | {promise@5}            | []               | {}                                           |                |
-| 8                          | [main()]   | []          | {promise@5, promise@8} | []               | {}                                           |                |
-| 22                         | [main()]   | []          | {promise@5, promise@8} | []               | { ev1.run:function@22 }                      |                |
-| 26                         | [main()]   | []          | {promise@5, promise@8} | []               | { ev1.run:function@22, ev2.run:function@26 } |                |
-| 30                         | [main()]   | []          | {promise@5, promise@8} | [function@26(0)] | { ev1.run:function@22, ev2.run:function@26 } |                |
-| eof                        | []         | []          | {promise@5, promise@8} | [function@26(0)] | { ev1.run:function@22, ev2.run:function@26 } |                |
+| 8                          | [main()]   | []          | {promise@5:rs, promise@8} | []               | {}                                           |                |
+| 22                         | [main()]   | []          | {promise@5:rs, promise@8:rs} | []               | { ev1.run:function@22 }                      |                |
+| 26                         | [main()]   | []          | {promise@5:rs, promise@8:rs} | []               | { ev1.run:function@22, ev2.run:function@26 } |                |
+| 30                         | [main()]   | []          | {promise@5:rs, promise@8:rs} | [function@26(0)] | { ev1.run:function@22, ev2.run:function@26 } |                |
+| eof                        | []         | []          | {promise@5:rs, promise@8:rs} | [function@26(0)] | { ev1.run:function@22, ev2.run:function@26 } |                |
 |                            |            |             |                        |                  |                                              |                |
