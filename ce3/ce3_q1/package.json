@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "build": "tsc",
+    "start": "node ./dist/bin/www",
+    "dev": "tsc && node ./dist/bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -13,5 +15,13 @@
     "http-errors": "~1.6.3",
     "mysql2": "^3.3.2",
     "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/debug": "^4.1.12",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
   }
 }
