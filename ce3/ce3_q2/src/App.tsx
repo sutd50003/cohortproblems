@@ -8,7 +8,7 @@ import Staff from './Staff';
 function App() {
   const DEPT = 0;
   const STAFF = 1;
-  const [tab, setTab] = useState(STAFF);
+  const [tab, setTab] = useState<number>(STAFF);
 
   const Child = tab === DEPT ? Dept : Staff;
   return (

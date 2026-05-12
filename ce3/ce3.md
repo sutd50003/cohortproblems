@@ -15,10 +15,10 @@ You may submit your codes in a zip file containing ce3_q1 and ce3_q2 folders.
 1. In mysql shell
    1. Create a database named `ce3q1`
    1. Create a non root user with a secure password
-1. Modify `models/db.js` according to your newly created user.
-1. Examine `models/dept.js`, `models/staff.js` and `models/work.js`. You don't need to modify any of these files.
-1. Examine `routes/dept.js` and `routes/staff.js`, You might need to modify these files depending on the port number you use for the frontend.
-1. Examine `app.js`. You don't need to modify it.
+1. Modify `models/db.ts` according to your newly created user.
+1. Examine `models/dept.ts`, `models/staff.ts` and `models/work.ts`. You don't need to modify any of these files.
+1. Examine `routes/dept.ts` and `routes/staff.ts`, You might need to modify these files depending on the port number you use for the frontend.
+1. Examine `app.ts`. You don't need to modify it.
 1. Examine `views/dept.ejs` and `views/staff.ejs`. You don't need to modify any of these files.
 
 ### Task 1 (2 Marks)

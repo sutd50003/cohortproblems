@@ -1,20 +1,21 @@
-import { useState, Component, useEffect } from "react";
-import React from "react";
+import { useState, useEffect } from "react";
+
+interface Dept {
+    code: string;
+}
+
+interface NewDeptBarProps {
+    code: string;
+    onCodeChange: (code: string) => void;
+    onSubmitClick: () => void;
+}
+
+interface DeptListProps {
+    depts: Dept[];
+}
 
 
-
-/**
- * Component for the Department input bar
- * the component consists of 
- *   -  a text input (dept code)  
- *   -  a submit button
- * @param {props} param0 
- *    - code (state dept code)
- *    - onCodeChange (state dept code update)
- *    - onSubmitClick (submitButton click event handler) 
- * @returns 
- */
-function NewDeptBar({code, onCodeChange, onSubmitClick}) {
+function NewDeptBar({code, onCodeChange, onSubmitClick}: NewDeptBarProps) {
     return (
         <div>
             <input type="text" placeholder="department code" 
@@ -27,19 +28,11 @@ function NewDeptBar({code, onCodeChange, onSubmitClick}) {
 }
 
 
-// TASK 1, complete the following component so that the dept list can be rendered.
-/** 
- * Components for the Department list
- * @param {props} param0 
- *    - a list of depts (depts state)
- * @returns 
- */
-
-function DeptList({depts}) {
+function DeptList({depts}: DeptListProps) {
     let rows = [];
     for (let i in depts) {
         rows.push(
-            <tr><td>{depts[i].code}</td></tr>
+            <tr key={depts[i].code}><td>{depts[i].code}</td></tr>
         );
     }
     return (        
@@ -48,19 +41,13 @@ function DeptList({depts}) {
 }
 
 function Dept() {
-    const [code, setCode] = useState('');
+    const [code, setCode] = useState<string>('');
 
     function handleSubmitClick() {
         submitNewDept();
     }
-    const [depts, setDepts] = useState([]);
+    const [depts, setDepts] = useState<Dept[]>([]);
     
-    /**
-     * triggered when the submit button is clicked.
-     * submit a new dept by calling the API
-     * then set the depts state, which will 
-     * render the dept table
-     */
     async function submitNewDept() {
         const response = await fetch(`http://localhost:3000/dept/submit`,
         {
@@ -71,20 +58,14 @@ function Dept() {
             }              
         });
         const text = await response.text();
-        const json = JSON.parse(text);
+        const json = JSON.parse(text) as Dept[];
         setDepts(json);
     }
 
-    /**
-     * triggered when the component did mount.
-     * submit to API to query all the depts
-     * then set the depts state, which will 
-     * render the dept table
-     */
     async function initDepts() {
         const response = await fetch(`http://localhost:3000/dept/all`);
         const text = await response.text();
-        const json = JSON.parse(text);
+        const json = JSON.parse(text) as Dept[];
         setDepts(json);
     }
 
