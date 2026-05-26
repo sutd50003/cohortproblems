@@ -59,7 +59,7 @@ implement a simple API web-app with the following end-points using MongoDB datab
    [{ "code": "hr", "staffs": [{ "id": "1", "name": "aaron", "dept": "hr" }] }]
    ```
 
-Make sure the database name is `echo` by having the following definition `const dbName = "echo";` in `db.ts`.
+Make sure the database name is `ce2q1` by having the following definition `const dbName = "ce2q1";` in `db.ts`.
 
 ## Task 2 (5 marks)
 
