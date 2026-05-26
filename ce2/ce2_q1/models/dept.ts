@@ -1,5 +1,5 @@
 import { db } from './db';
-import { find as findStaff } from './staff';
+import { Filter, Document } from 'mongodb';
 
 const collectionName = 'dept'
 
@@ -16,11 +16,11 @@ export async function all(): Promise<Dept[]> {
     return depts;
 }
 
-export async function find(p: Record<string, unknown>): Promise<Dept[]> {
+export async function find(p: Filter<Document>): Promise<Dept[]> {
     try {
         if (!db) throw new Error("Database not initialized");
         const collection = db.collection(collectionName);
-        const cursor = collection.find<Record<string, unknown>>(p);
+        const cursor = collection.find(p);
         const depts: Dept[] = [];
         while (await cursor.hasNext()) {
             const dbobj = await cursor.next();
@@ -36,7 +36,7 @@ export async function find(p: Record<string, unknown>): Promise<Dept[]> {
     } 
 }
 
-export async function insertMany(depts: Record<string, unknown>[]): Promise<void> {
+export async function insertMany(depts: Dept[]): Promise<void> {
     try {
         if (!db) throw new Error("Database not initialized");
         const collection = db.collection(collectionName);
