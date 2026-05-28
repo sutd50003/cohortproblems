@@ -6,13 +6,13 @@ const router: Router = express.Router();
 
 
 /* insert a staff, should have used POST instead of GET */
-router.get('/add/:id/:name/:code', async function(_req: Request, res: Response, _next: NextFunction) {
+router.get('/add/:id/:name/:code', async function(req: Request, res: Response, next: NextFunction) {
     res.send(`TODO`); // TODO: Fixme
 });
 
 /* GET staff listing. */
 
-router.get('/all/', async function(_req: Request, res: Response, _next: NextFunction) {
+router.get('/all/', async function(req: Request, res: Response, next: NextFunction) {
     res.send(`TODO`); // TODO: Fixme
 });
 

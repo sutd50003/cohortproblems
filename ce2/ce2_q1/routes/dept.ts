@@ -5,7 +5,7 @@ import * as staffmodel from '../models/staff';
 const router: Router = express.Router();
 
 
-router.get('/add/:code', async function(_req: Request, res: Response, _next: NextFunction) {
+router.get('/add/:code', async function(req: Request, res: Response, next: NextFunction) {
     res.send(`TODO`); // TODO: Fixme
 });
 
@@ -13,12 +13,12 @@ router.get('/add/:code', async function(_req: Request, res: Response, _next: Nex
 
 /* GET dept listing. */
 
-router.get('/all/', async function(_req: Request, res: Response, _next: NextFunction) {
+router.get('/all/', async function(req: Request, res: Response, next: NextFunction) {
     res.send(`TODO`); // TODO: Fixme
 });
 
 
-router.get('/all/withstaff/', async function(_req: Request, res: Response, _next: NextFunction) {
+router.get('/all/withstaff/', async function(req: Request, res: Response, next: NextFunction) {
     res.send(`TODO`); // TODO: Fixme
 })
 
