@@ -52,3 +52,31 @@ Complete the TODOs in the React component `Dept.jsx` so that the department tabl
 Complete the TODOs in the React component `Staff.jsx` so that the department code dropdown can be rendered on start.
 
 ![](../images/ce8_q2_2.png)
+
+
+## (Optional) Question 3: Agentic Software Development
+
+This exercise is optional, you don't need to submit. 
+
+In this exercise, we assume you have completed question 1, and copied the updated modules from `ce3_q1` to `ce3_agentic`. 
+
+1. Install opencode, (https://opencode.ai/), you may choose to install either desktop version or cli version.
+
+1. Start a new project from the project root folder. 
+   1. If you are using opencode desktop, click (+) icon
+   1. If you are using opencode cli, run `opencode` when you are in the `ce3_agentic` folder.
+
+1. Choose a model.
+   1. If you are using opencode desktop, click the drop down next to `Build/Plan` at the buttom. 
+   1. If you are using opencode cli, press ctrl-p. 
+
+1. Use a separate editor/IDE, open and read `ce3_agentic/AGENTS.md`.
+
+1. Use a separate editor/IDE, open and read `ce3_agentic/specs_sequence/*.md`.
+   * `create_dept.md` and `create_staff.md` should have been implemented by now.
+   * `update_staff.md` will be implemented using Agentic AI.
+
+1. Write a prompt to answer opencode to implement the `update_staff.md` feature. 
+
+1. After the code generated, you should **review** the codes to tell us whether it is correct.
+
