@@ -5,10 +5,10 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import { cleanup } from './models/db';
 
-import indexRouter from './routes/index';
-import usersRouter from './routes/users';
-import deptRouter from './routes/dept';
-import staffRouter from './routes/staff';
+import indexRouter from './routes/index.js';
+import usersRouter from './routes/users.js';
+import deptRouter from './routes/dept.js';
+import staffRouter from './routes/staff.js';
 
 const app: Application = express();
 
