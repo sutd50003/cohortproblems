@@ -86,10 +86,6 @@ function Staff() {
         const json = JSON.parse(text) as Staff[];
         setStaffs(json);
     }
-    useEffect( () => {
-        initStaffs();
-    }, []);
-
     async function initStaffs() {
         const response = await fetch(`http://localhost:3000/staff/all`);
         const text = await response.text();

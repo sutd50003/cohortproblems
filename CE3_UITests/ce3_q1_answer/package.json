@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "build": "tsc && node -e \"fs.cpSync('./public', './dist/public/', { recursive: true })\"",
+    "start": "node ./dist/bin/www",
+    "dev": "tsc && node -e \"fs.cpSync('./public', './dist/public/', { recursive: true })\" && node ./dist/bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -13,5 +15,14 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "mysql2": "^3.14.2"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/debug": "^4.1.13",
+    "@types/express": "^5.0.6",
+    "@types/express-serve-static-core": "^5.1.2",
+    "@types/http-errors": "^2.0.5",
+    "@types/morgan": "^1.9.10",
+    "typescript": "^7.0.2"
   }
 }
